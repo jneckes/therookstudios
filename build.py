@@ -71,6 +71,7 @@ def build():
             "canonical": f'<link rel="canonical" href="{SITE["origin"]}/{"" if page.name == "index.html" else page.name}">' if SITE["origin"] else "",
             "bars": '<div class="bars" aria-hidden="true"><i></i><i></i></div>' if meta.get("bars") == "yes" else "",
             "home": ' aria-current="page"' if current == "home" else "",
+            "ogimage": f'{SITE["origin"]}/assets/img/og.png' if SITE["origin"] else "assets/img/og.png",
         }
         body = render(body, values)
         html = render(partials["head"], values) + render(partials["header"], values) + body + render(partials["footer"], values)

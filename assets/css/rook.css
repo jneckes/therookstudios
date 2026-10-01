@@ -235,6 +235,9 @@ cite{font-style:italic}
 .practice .more{display:inline-flex;align-items:center;gap:10px;margin-top:8px;font-size:12px;font-weight:750;font-stretch:125%;letter-spacing:.12em;text-transform:uppercase;color:var(--text)}
 .practice .more svg{width:15px;height:15px;transition:transform .3s var(--ease)}
 .practice:hover .more svg{transform:translateX(4px)}
+.practice .pstat{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:center;padding:12px 0 14px;border-bottom:1px solid var(--line)}
+.practice .pstat b{font-size:clamp(30px,2.6vw,42px);font-weight:620;font-stretch:94%;letter-spacing:-.035em;line-height:1;color:var(--c)}
+.practice .pstat span{font-size:13.5px;line-height:1.35;color:var(--muted);max-width:24ch}
 .practice .partner{font-size:12px;font-weight:700;font-stretch:125%;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 
 /* ---------- cards & lists */
