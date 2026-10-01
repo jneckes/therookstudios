@@ -32,7 +32,8 @@ python3 build.py
 Settings at the top of `build.py`:
 
 - `contact_email`: the address behind every "Start a conversation" link. **Confirm it before launch.**
-- `origin`: the production URL, used for canonical links (for example `https://therook.example`).
+- `origin`: the production URL, used for canonical links and the absolute social-card image (for example `https://therook.example`).
+- `base`: the path the site is served from, `/` by default. Only `404.html` uses it, so the not-found page keeps its styles at any depth (`/some/old/page`). On a GitHub Pages project site without a custom domain, set it to `/therookstudios/`.
 
 To preview locally, serve the root from any static server, for example `python3 -m http.server`, and open http://localhost:8000.
 

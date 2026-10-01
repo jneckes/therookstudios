@@ -16,11 +16,18 @@ const onScroll = () => { if (head) head.classList.toggle('solid', scrollY > 24 |
 addEventListener('scroll', onScroll, { passive: true }); onScroll();
 const menuBtn = $('.menu-btn');
 if (menuBtn) {
-  const setMenu = open => { D.body.classList.toggle('menu-open', open); menuBtn.setAttribute('aria-expanded', String(open)); onScroll(); };
+  const behind = [$('main'), $('.site-foot')].filter(Boolean);
+  const setMenu = open => {
+    D.body.classList.toggle('menu-open', open); menuBtn.setAttribute('aria-expanded', String(open)); onScroll();
+    behind.forEach(el => { el.inert = open; });
+  };
   menuBtn.addEventListener('click', () => setMenu(!D.body.classList.contains('menu-open')));
   $$('.nav a').forEach(a => a.addEventListener('click', () => setMenu(false)));
-  addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
-  matchMedia('(min-width: 981px)').addEventListener('change', e => { if (e.matches) setMenu(false); });
+  addEventListener('keydown', e => {
+    if (e.key !== 'Escape' || !D.body.classList.contains('menu-open')) return;
+    setMenu(false); menuBtn.focus();
+  });
+  matchMedia('(min-width: 1280px)').addEventListener('change', e => { if (e.matches) setMenu(false); });
 }
 $$('[data-year]').forEach(el => { el.textContent = String(new Date().getFullYear()); });
 const grain = $('.grain');
@@ -39,9 +46,17 @@ $$('.waffle').forEach(el => {
 });
 $$('.dots[data-on]').forEach(el => {
   const n = +el.dataset.n || 200, on = +el.dataset.on || 20; let h = '';
-  for (let i = 0; i < n; i++) h += i < on ? '<i class="on"></i>' : '<i class="lit"></i>';
+  for (let i = 0; i < n; i++) h += i < on ? '<i class="on"></i>' : '<i class="v"></i>';
   el.innerHTML = h;
 });
+/* wide charts scroll sideways on small screens; fade the cut edge until the end is reached */
+const gantts = $$('.gantt-wrap');
+const fitGantts = () => gantts.forEach(g => {
+  g.classList.toggle('scrolls', g.scrollWidth > g.clientWidth + 1);
+  g.classList.toggle('end', g.scrollLeft + g.clientWidth >= g.scrollWidth - 4);
+});
+gantts.forEach(g => g.addEventListener('scroll', fitGantts, { passive: true }));
+addEventListener('resize', fitGantts); fitGantts();
 $$('.spark .ln').forEach(p => { try { p.style.setProperty('--len', Math.ceil(p.getTotalLength()) + 1); } catch (e) {} });
 
 /* ---------------- reveal + count up */
@@ -64,7 +79,8 @@ revs.forEach(el => {
 const reveal = el => { el.classList.add('in'); $$('[data-count]', el).forEach(countUp); if (el.hasAttribute('data-count')) countUp(el); };
 if ('IntersectionObserver' in window && !reduce) {
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { reveal(e.target); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
-  revs.forEach(el => io.observe(el));
+  // the hero copy is the first screen: it always plays in, even when it sits low on a short phone
+  revs.forEach(el => el.closest('.hero') ? reveal(el) : io.observe(el));
 } else revs.forEach(reveal);
 
 /* ---------------- rook shapes */

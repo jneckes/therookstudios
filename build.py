@@ -26,6 +26,10 @@ SITE = {
     "contact_email": "hello@therookstudios.com",
     # Set to the production origin (no trailing slash) for canonical and social URLs.
     "origin": "",
+    # The path the site is served from. The 404 page uses it so its links and assets
+    # resolve at any depth (/some/missing/page). Use "/therookstudios/" for a GitHub
+    # Pages project site without a custom domain.
+    "base": "/",
 }
 NAV = [
     ("unscripted", "unscripted.html", "Unscripted"),
@@ -49,6 +53,12 @@ def front_matter(text):
 
 def render(template, values):
     return re.sub(r"\{\{(\w+)\}\}", lambda m: values.get(m.group(1), ""), template)
+
+
+def rooted(html, base):
+    """Point relative links and assets at the site root, and contact links at the home page."""
+    html = html.replace('href="#contact"', f'href="{base}#contact"')
+    return re.sub(r'(\s(?:href|src))="(?![a-z][a-z0-9+.-]*:|#|/)([^"]*)"', rf'\1="{base}\2"', html)
 
 
 def build():
@@ -75,6 +85,8 @@ def build():
         }
         body = render(body, values)
         html = render(partials["head"], values) + render(partials["header"], values) + body + render(partials["footer"], values)
+        if page.name == "404.html":
+            html = rooted(html, SITE["base"])
         (ROOT / page.name).write_text(html)
         out.append(page.name)
     print("built:", ", ".join(out))
