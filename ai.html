@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI transformation for studios · The Rook, with Substrate</title>
+<meta name="description" content="The Rook and Substrate refound studios around AI: one governed studio brain in your own cloud, agents that do the legwork, and people who make every call.">
+<meta name="theme-color" content="#0b0d24">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Rook">
+<meta property="og:title" content="AI transformation for studios · The Rook, with Substrate">
+<meta property="og:description" content="The Rook and Substrate refound studios around AI: one governed studio brain in your own cloud, agents that do the legwork, and people who make every call.">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/archivo-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/rook.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="bird" viewBox="0 0 24 9.6"><path d="M12 3Q12.71 3 12.77 3.88Q14.86 2.17 17.5 2.4Q20.36 .48 23 .92L22.23 1.58L22.73 1.97L21.95 2.24L22.39 2.63L21.57 2.79L21.9 3.18L21.13 3.12Q19.7 3.01 17.5 4.49Q14.97 5.15 12.99 6.63L12.82 7.95Q12 8.94 11.18 7.95L11.01 6.63Q9.03 5.15 6.5 4.49Q4.3 3.01 2.87 3.12L2.1 3.18L2.43 2.79L1.61 2.63L2.04 2.24L1.28 1.97L1.77 1.58L1 .92Q3.64 .48 6.5 2.4Q9.14 2.17 11.23 3.88Q11.29 3 12 3Z"/></symbol>
+    <symbol id="arrow" viewBox="0 0 16 16"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="down" viewBox="0 0 16 16"><path d="M8 2v11M3.5 9 8 13.5 12.5 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="loop" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+<canvas id="sky" aria-hidden="true"></canvas>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="The Rook, home"><svg viewBox="0 0 24 9.6" aria-hidden="true"><use href="#bird"/></svg><span>The Rook</span></a>
+    <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><i></i></button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="unscripted.html">Unscripted</a>
+        <a href="branded-entertainment.html">Branded entertainment</a>
+        <a href="ai.html" aria-current="page">AI, with Substrate</a>
+        <a href="approach.html">Approach</a>
+        <a class="btn violet" href="#contact">Start a conversation</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero sub" aria-labelledby="ai-h" data-pass="small">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow v rev">AI transformation · In partnership with Substrate</p>
+      <h1 class="h1 rev" id="ai-h">Refound the studio for the age of&nbsp;AI.</h1>
+      <p class="lede rev">The Rook and Substrate rebuild studios around one governed brain and the agents that work from it. Your history becomes your edge. Your people make every call.</p>
+      <div class="trio rev"><span style="--c:var(--violet-2)"><i></i>Refound, don’t retrofit</span><span style="--c:var(--teal)"><i></i>Data first</span><span style="--c:var(--gold)"><i></i>20 does the work of 200</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec tight" aria-labelledby="div-h">
+  <div class="wrap split l">
+    <div class="stack-l">
+      <p class="eyebrow rev">Who wins</p>
+      <h2 class="title rev" id="div-h">The AI dividend pays out to the nimble.</h2>
+      <p class="body rev">Done right, AI multiplies a team’s output by ten. We think that’s the floor. Lean studios collect first: fewer layers, faster greenlights, and workflows that can actually change.</p>
+      <p class="body rev">A development executive does the work of ten. A twenty-person studio does the work of two hundred. The leaner the team, the bigger the multiple.</p>
+    </div>
+    <figure class="stack-l rev" aria-label="Twenty people on payroll doing two hundred people's worth of output">
+      <div class="multiple"><span class="n nums">20</span><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#arrow"/></svg><span class="n to nums">200</span></div>
+      <div class="multiple-l"><span>People on payroll</span><span></span><span>People’s worth of output</span></div>
+      <div class="dots" data-n="200" data-on="20" aria-hidden="true"></div>
+    </figure>
+  </div>
+</section>
+
+<section class="sec band" aria-labelledby="ai-mkt-h" data-pass="flock">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow rev">Already moving</p>
+      <h2 class="title wide rev" id="ai-mkt-h">Studios and their partners are already rebuilding.</h2>
+      <p class="lede rev">The question is no longer whether AI belongs in production. It is who builds on their own data, with consent, first.</p>
+    </div>
+    <div class="stats">
+      <article class="stat panel rev">
+        <div class="big nums">10×</div>
+        <div class="viz meter" role="img" aria-label="Netflix says a generative AI visual effects sequence in El Eternauta was completed ten times faster than with a traditional workflow">
+          <div class="m"><span>Before</span><span class="tr"><i style="--w:100%;--c:#4b4a7a"></i></span><b>1×</b></div>
+          <div class="m"><span>With AI</span><span class="tr"><i style="--w:10%;--c:var(--teal);--dd:.75s"></i></span><b>10× faster</b></div>
+        </div>
+        <p class="body">faster, Netflix says, for a VFX sequence in <cite>El Eternauta</cite> made with generative AI</p>
+        <p class="src"><a href="#src-1">Netflix Q2 2025 earnings call</a></p>
+      </article>
+      <article class="stat panel rev">
+        <div class="big nums">350–400</div>
+        <div class="viz cols" style="--n:2" role="img" aria-label="Generative AI shots in House of David, by its makers' estimate: more than 70 in season 1, 350 to 400 in season 2">
+          <div class="col"><span>70+</span><i style="--h:19.2%;--c:#4b4a7a"></i><small>Season 1</small></div>
+          <div class="col"><span>350–400</span><i style="--h:100%;--dd:.8s"></i><small>Season 2</small></div>
+        </div>
+        <p class="body">AI shots in season two of Amazon’s <cite>House of David</cite>, by its makers’ estimate, more than four times season one</p>
+        <p class="src"><a href="#src-2">WIRED · Nov 2025</a></p>
+      </article>
+      <article class="stat panel rev">
+        <div class="big nums">~<span data-count="300">300</span></div>
+        <div class="viz" role="img" aria-label="Netflix says generative AI workflows were used in roughly 300 of its titles in 2026, with most of the work in post-production">
+          <div class="chips" style="gap:6px"><span style="font-size:12px;padding:5px 9px;border-color:var(--teal)">Post-production</span><span style="font-size:12px;padding:5px 9px">Pre-visualization</span><span style="font-size:12px;padding:5px 9px">Localization</span></div>
+        </div>
+        <p class="body">Netflix titles have used generative AI workflows in 2026, most of them in post-production</p>
+        <p class="src"><a href="#src-3">Netflix Q2 2026 shareholder letter</a></p>
+      </article>
+      <article class="stat panel rev">
+        <div class="big nums">90%+</div>
+        <div class="viz waffle" data-a="90" aria-hidden="true"></div>
+        <p class="body">of the sizzles and pitch decks for some Fremantle shows in development were AI-produced, its chief legal officer said</p>
+        <p class="src"><a href="#src-4">Royal Television Society · Nov 2025</a></p>
+      </article>
+    </div>
+    <div class="cards" style="--n:3;margin-top:clamp(20px,3vh,28px)">
+      <article class="card panel top rev" style="--c:var(--violet-2)"><p class="n">Inside a major producer</p><h3>ITV Studios, end to end</h3><p>ITV’s chief executive says AI is now used end to end at ITV Studios and embedded in all its labels: research and development, pre-production, post, editing, production planning and marketing.</p><p class="src"><a href="#src-5">ITV FY2025 results · Mar 2026</a></p></article>
+      <article class="card panel top rev" style="--c:var(--magenta)"><p class="n">The guilds set the rules</p><h3>Consent is in the contracts</h3><p>SAG-AFTRA ratified its 2026 contract with 91% of the vote, building on its AI and digital replica protections through 2030. The 2026 WGA contract keeps its AI guardrails.</p><p class="src"><a href="#src-6">Deadline · WGA</a></p></article>
+      <article class="card panel top rev" style="--c:var(--teal)"><p class="n">Buyers expect it done right</p><h3>Netflix’s partner guidance</h3><p>Netflix asks production partners for consent before AI generates or replaces a performance, and to escalate any use involving talent, personal data or third-party IP.</p><p class="src"><a href="#src-7">Netflix partner guidance · Aug 2025</a></p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="ref-h">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow rev">The refounding</p>
+      <h2 class="title wide rev" id="ref-h">You can’t bolt AI on. You have to refound.</h2>
+      <p class="lede rev">Bolted-on AI buys you demos and a little lift. A refounding rebuilds how the studio works around what AI makes possible, without stopping the shows already in production.</p>
+    </div>
+    <div class="six rev" role="list" aria-label="What a refounding revisits"><span role="listitem">Workflows</span><span role="listitem">Data</span><span role="listitem">Context</span><span role="listitem">Team</span><span role="listitem">Training</span><span role="listitem">Incentives</span></div>
+    <div class="cards" style="--n:3;margin-top:clamp(24px,4vh,40px)">
+      <article class="card panel top rev" style="--c:var(--violet-2)"><p class="n">01 · Operators</p><h3>Change that keeps the shows on schedule</h3><p>Change management is the hard part. We move the whole team along with the tooling: development, production, post, sales and finance.</p></article>
+      <article class="card panel top rev" style="--c:var(--teal)"><p class="n">02 · Studio depth</p><h3>People who know how studios run</h3><p>The Rook works inside studios on slates, buyers, branded deals and ownership. We know where the hours go, and which ones matter.</p></article>
+      <article class="card panel top rev" style="--c:var(--gold)"><p class="n">03 · Technical excellence</p><h3>Data platforms built for a living</h3><p>Substrate’s founders build data and AI infrastructure. They turn a good demo into workflows still running in month twelve.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec band" aria-labelledby="proc-h" data-pass="small">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow rev">Our process</p>
+      <h2 class="title rev" id="proc-h">Data. Workflows. Roadmap.</h2>
+      <p class="lede rev">In that order. Each one unlocks the next.</p>
+    </div>
+    <ol class="steps" style="--n:3">
+      <li class="step panel rev" style="--c:var(--violet-2)"><span class="no" aria-hidden="true">01</span><h3>Start with the data</h3><p>AI is a data problem first. Connectors between inboxes, drives and edit bays are not enough. We build one governed foundation, the studio brain, that every workflow reads from and writes to.</p><span class="to">Everything else sits on this</span></li>
+      <li class="step panel rev" style="--c:var(--teal)"><span class="no" aria-hidden="true">02</span><h3>Audit every workflow</h3><p>We map every recurring task in development, sales, production, post and finance. Each gets two scores: the value of the change, and the friction to make it.</p><span class="to">The map of where 10× lives</span></li>
+      <li class="step panel rev" style="--c:var(--gold)"><span class="no" aria-hidden="true">03</span><h3>Build the roadmap together</h3><p>We run the refounding step by step and keep the foundation current as the technology moves. Every phase gives the team hours back and puts more of the right shows in front of the right buyers.</p><span class="to">The transformation, sustained</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="brain-h">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow rev">The studio brain</p>
+      <h2 class="title wide rev" id="brain-h">Every source in. Every workflow out.</h2>
+      <p class="lede rev">Every system the studio runs on feeds one governed core in your own cloud. Agents read from it, do the legwork, and write back what they learn. Every use case that follows runs on it.</p>
+    </div>
+    <div class="brain rev">
+      <div class="brain-col">
+        <p class="k">Sources · kept in sync</p>
+        <div class="src-chip"><b>Development</b><span>Pitches, treatments, sizzles, pass notes</span></div>
+        <div class="src-chip"><b>Buyers</b><span>Email, calls, mandates, who bought what</span></div>
+        <div class="src-chip"><b>Talent</b><span>Hosts, creators, cast, agents, deals</span></div>
+        <div class="src-chip"><b>Footage</b><span>Dailies, transcripts, logs, selects</span></div>
+        <div class="src-chip"><b>Production</b><span>Budgets, schedules, crew, call sheets</span></div>
+        <div class="src-chip"><b>Rights</b><span>Contracts, releases, clearances, formats</span></div>
+        <div class="src-chip"><b>Brands</b><span>Partners, briefs, results, renewals</span></div>
+        <div class="src-chip"><b>Audience</b><span>Ratings, social, search, press</span></div>
+      </div>
+      <div class="core">
+        <p class="sub">One governed core</p>
+        <p class="name">The studio brain</p>
+        <p class="body" style="font-size:15px">Your cloud. Yours to keep.</p>
+        <ol>
+          <li><b>Ingest</b><span>Every source, kept current</span></li>
+          <li><b>Resolve</b><span>One record per show, person, buyer and brand</span></li>
+          <li><b>Graph</b><span>Who knows whom, who bought what</span></li>
+          <li><b>Index</b><span>Every page and every hour of footage, searchable</span></li>
+          <li><b>Govern</b><span>Access by role, consent, retention, audit</span></li>
+          <li><b>Ask</b><span>What the studio knows, in plain English</span></li>
+        </ol>
+      </div>
+      <div class="brain-col">
+        <p class="k">Workflows · on schedule or on request</p>
+        <div class="wf-chip"><b>The buyer map</b><span>Who buys what, and the warm way in</span><em>First</em></div>
+        <div class="wf-chip"><b>Pitch pre-reads</b><span>One page before every buyer meeting</span><em>First</em></div>
+        <div class="wf-chip"><b>Story finder</b><span>Every moment in the footage, by question</span><em>First</em></div>
+        <div class="wf-chip"><b>Development radar</b><span>Subjects and creators rising this week</span></div>
+        <div class="wf-chip"><b>Brand match</b><span>The right brands for a format, with a reason</span></div>
+        <div class="wf-chip"><b>Slate brief</b><span>Budget, schedule and deliverables vs plan</span></div>
+        <div class="wf-chip"><b>Clearance desk</b><span>Releases and rights checked before lock</span></div>
+        <div class="wf-chip"><b>Clip engine</b><span>Every episode cut for every platform</span></div>
+      </div>
+    </div>
+    <p class="loop rev"><svg aria-hidden="true"><use href="#loop"/></svg><span><b>The learning loop.</b> Every run writes back: corrections, pass reasons, what sold, how it rated. The brain gets sharper with every show you make.</span></p>
+  </div>
+</section>
+
+<section class="sec band" aria-labelledby="map-h">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow rev">Where to start</p>
+      <h2 class="title wide rev" id="map-h">Where 10× lives at a studio.</h2>
+      <p class="lede rev">Every recurring task gets two scores: the value of the change and the friction to make it. The first builds sit where value is high and friction is low, and they fund the harder ones.</p>
+    </div>
+    <div class="mapwrap">
+      <div class="rev" style="padding-bottom:34px">
+        <div class="map" role="img" aria-label="Illustrative map of studio workflows by value and friction. High value, low friction: the buyer map, pitch pre-reads, the story finder, transcripts and logging, and the slate brief. High value, higher friction: brand match, the development radar, the clip engine and the clearance desk. Lower value: travel and expenses, and bookkeeping exports.">
+          <span class="ax ax-y">Value ↑</span>
+          <span class="ax ax-x">Friction to change →</span>
+          <span class="quad" style="left:12px;bottom:calc(100% - 52px)">Start here</span>
+          <span class="quad" style="left:calc(50% + 12px);bottom:calc(100% - 52px)">Worth the fight</span>
+          <span class="quad" style="left:12px;bottom:12px">Cheap wins</span>
+          <span class="quad" style="left:calc(50% + 12px);bottom:12px">Leave it alone</span>
+          <span class="orb sm hot" style="--x:14%;--y:84%;--od:.5s"><i></i><b>The buyer map</b></span>
+          <span class="orb sm hot" style="--x:22%;--y:74%;--od:.58s"><i></i><b>Pitch pre-reads</b></span>
+          <span class="orb sm hot" style="--x:31%;--y:88%;--od:.66s"><i></i><b>The story finder</b></span>
+          <span class="orb sm" style="--x:9%;--y:62%;--od:.74s"><i></i><b>Transcripts and logs</b></span>
+          <span class="orb sm" style="--x:38%;--y:66%;--od:.82s"><i></i><b>The slate brief</b></span>
+          <span class="orb sm" style="--x:58%;--y:80%;--od:.9s"><i></i><b>Brand match</b></span>
+          <span class="orb sm" style="--x:66%;--y:62%;--od:.98s"><i></i><b>Development radar</b></span>
+          <span class="orb sm l" style="--x:86%;--y:74%;--od:1.06s"><i></i><b>The clip engine</b></span>
+          <span class="orb sm l" style="--x:80%;--y:56%;--od:1.14s"><i></i><b>Clearance desk</b></span>
+          <span class="orb sm" style="--x:18%;--y:24%;--od:1.22s"><i></i><b>Travel and expenses</b></span>
+          <span class="orb sm l" style="--x:84%;--y:18%;--od:1.3s"><i></i><b>Bookkeeping exports</b></span>
+        </div>
+      </div>
+      <div class="mapnote rev">
+        <span class="tag g">First builds in gold</span>
+        <p class="body">In the audit we plot and rank every workflow in your studio with you.</p>
+        <p class="note">Illustrative. Positions come from your own workflows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="hist-h">
+  <div class="wrap split r">
+    <figure class="chart panel rev" aria-labelledby="hist-cap">
+      <p class="k" id="hist-cap" style="margin-bottom:14px">Value to the studio · illustrative</p>
+      <svg viewBox="0 0 560 280" role="img" aria-label="Two curves: off-the-shelf AI tools give a lift and then go flat; a system built on the studio's own history keeps climbing from day one to year three.">
+        <line class="grid" x1="40" y1="40" x2="520" y2="40"/>
+        <line class="grid" x1="40" y1="130" x2="520" y2="130"/>
+        <line class="base" x1="40" y1="230" x2="520" y2="230"/>
+        <path class="band" fill="rgba(35,170,163,.14)" d="M40 230 C 140 214, 240 180, 330 132 S 470 52, 520 34 L 520 168 C 420 168, 300 168, 200 170 C 140 172, 90 186, 40 230 Z"/>
+        <path class="draw" fill="none" stroke="#a29dc4" stroke-width="3" stroke-dasharray="6 6" stroke-linecap="round" d="M40 230 C 90 186, 140 172, 200 170 S 420 168, 520 168"/>
+        <path class="draw" fill="none" stroke="#3fd0c8" stroke-width="3.5" stroke-linecap="round" d="M40 230 C 140 214, 240 180, 330 132 S 470 52, 520 34"/>
+        <circle cx="520" cy="34" r="6" fill="#3fd0c8" stroke="#15163a" stroke-width="2"/>
+        <circle cx="520" cy="168" r="6" fill="#a29dc4" stroke="#15163a" stroke-width="2"/>
+        <text class="lbl" x="150" y="62" style="fill:#3fd0c8">Built on your own history</text>
+        <text x="150" y="80">every show makes it smarter</text>
+        <text class="lbl" x="380" y="196" style="fill:#cfcbe6">Off-the-shelf AI tools</text>
+        <text x="380" y="214">a lift, then flat</text>
+        <text x="40" y="256">Day one</text>
+        <text x="520" y="256" text-anchor="end">Year three</text>
+      </svg>
+    </figure>
+    <div class="stack-l">
+      <p class="eyebrow rev">Why data first</p>
+      <h2 class="title rev" id="hist-h">Every show teaches the next one.</h2>
+      <p class="body rev">Off-the-shelf AI does the same thing on day 1,000 as on day one. A system built on your studio’s own history improves with use. Every pitch adds who passed and why. Every season adds what rated, what cut through, and what the buyer asked for next.</p>
+      <p class="body rev">That knowledge stays with the studio when people move on. It makes the next pitch sharper and the next production easier, and nobody else has it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec band" aria-labelledby="scen-h">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow rev">What it looks like</p>
+      <h2 class="title wide rev" id="scen-h">A question in plain English. Legwork done by an agent. The call made by a person.</h2>
+      <p class="illus rev">Illustrative scenarios · names and numbers invented</p>
+    </div>
+    <div class="cases" style="gap:clamp(16px,2.6vh,24px)">
+      <article class="scen panel rev">
+        <div>
+          <div class="q"><span class="k">The buyer map</span><p>“Which buyers bought a competition format like ours in the last 18 months, and who can walk us in?”</p></div>
+          <ul class="lit"><li>Every pitch, pass note and deal the studio has logged</li><li>Email and calendar: who we talk to, and how lately</li><li>Trade coverage of every unscripted order</li><li>Talent and producer networks: who worked where</li></ul>
+          <p class="check"><b>Human checkpoint</b>Your head of sales picks the path. The note goes out from a person.</p>
+        </div>
+        <div class="answer">
+          <h4>Six buyers ordered the format type. Four have a warm path.</h4>
+          <div class="rows">
+            <div><i>01</i><span><b>A streamer’s unscripted team</b> · ordered two competition series last year</span><em>Warm · EP</em></div>
+            <div><i>02</i><span><b>A cable network</b> · new mandate for family competition</span><em>Warm · host</em></div>
+            <div><i>03</i><span><b>An ad-supported streamer</b> · passed in March: “too close to a returning show”</span><em>Revisit</em></div>
+            <div><i>04</i><span><b>A creator-led platform deal</b> · fits the format with a brand partner</span><em>New</em></div>
+          </div>
+          <p class="out">→ four pre-reads drafted · one pass reason flagged before the pitch</p>
+        </div>
+      </article>
+      <article class="scen panel rev">
+        <div>
+          <div class="q"><span class="k">The story finder</span><p>“Across 412 hours of dailies, find every moment where the two leads disagree about money, and rank them by tension.”</p></div>
+          <ul class="lit"><li>Transcripts and speaker labels for every camera</li><li>Field producers’ logs and story notes</li><li>The episode outlines and the network’s notes</li><li>Releases and clearances for everyone on screen</li></ul>
+          <p class="check"><b>Human checkpoint</b>The story producer picks the beats. The editor cuts them.</p>
+        </div>
+        <div class="answer">
+          <h4>37 moments found. Nine carry the arc.</h4>
+          <div class="rows">
+            <div><i>D4</i><span><b>Cam B · 14:22:05</b> · the first argument, in the truck</span><em>Selects</em></div>
+            <div><i>D9</i><span><b>Cam A · 09:41:50</b> · the loan comes up at breakfast</span><em>Selects</em></div>
+            <div><i>D12</i><span><b>Cam C · 18:03:12</b> · one walks off; a bystander has no release</span><em>Clear first</em></div>
+            <div><i>D15</i><span><b>Cam A · 11:16:40</b> · the apology, on the dock</span><em>Selects</em></div>
+          </div>
+          <p class="out">→ a stringout with timecodes for the editor · one clearance flagged</p>
+        </div>
+      </article>
+      <article class="scen panel rev">
+        <div>
+          <div class="q"><span class="k">Brand match</span><p>“Which ten brands should hear first about our cooking format, and why each one?”</p></div>
+          <ul class="lit"><li>The studio’s past brand partners and how they renewed</li><li>Category spend and brand-funded content in the trades</li><li>Audience fit from the format’s pilot and social data</li><li>Agency and CMO relationships across the team</li></ul>
+          <p class="check"><b>Human checkpoint</b>Your branded lead edits the list. Every pitch comes from a person.</p>
+        </div>
+        <div class="answer">
+          <h4>Ten brands, tiered, each with a case.</h4>
+          <div class="rows">
+            <div><i>T1</i><span><b>A grocery chain</b> · funded a food series in 2025, renewed once</span><em>Warm · past</em></div>
+            <div><i>T1</i><span><b>A cookware brand</b> · audience overlap is the highest on the list</span><em>Warm · agency</em></div>
+            <div><i>T2</i><span><b>A beverage brand</b> · launching a line the format can carry</span><em>New</em></div>
+            <div><i>⊘</i><span><b>A meal-kit company</b> · sponsors a rival show this season</span><em>Hold</em></div>
+          </div>
+          <p class="out">→ ten one-page cases drafted · one conflict held back</p>
+        </div>
+      </article>
+    </div>
+    <p class="note rev" style="margin-top:22px">Every agent runs the same loop: <b style="color:var(--text)">ask</b> in plain English, pull the right <b style="color:var(--text)">context</b>, do the <b style="color:var(--text)">legwork</b>, stop at <b style="color:var(--text)">the call</b> a named person makes, and <b style="color:var(--text)">write back</b> what it learned.</p>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="guard-h">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow rev">Responsible by design</p>
+      <h2 class="title wide rev" id="guard-h">Your data stays yours. Your people make every call.</h2>
+      <p class="lede rev">Studios hold sensitive material: unaired footage, deal terms, talent likenesses, private contact lists. We build for that from day one.</p>
+    </div>
+    <div class="guard" style="--n:4">
+      <div class="panel rev" style="--c:var(--teal)"><h3>Your cloud</h3><p>The studio brain runs in your own cloud account, with access by role. You own the data and the software we build. It stays yours if we part ways.</p></div>
+      <div class="panel rev" style="--c:var(--violet-2)"><h3>A person sends it</h3><p>Agents draft, check and flag. A named person approves every pitch, cut and message before it reaches a buyer, a brand or the public.</p></div>
+      <div class="panel rev" style="--c:var(--magenta)"><h3>Consent first</h3><p>No one’s voice or likeness is generated without written consent. We design every workflow around your guild agreements and talent contracts.</p></div>
+      <div class="panel rev" style="--c:var(--gold)"><h3>Every action logged</h3><p>Every source, query, draft and decision is recorded. Works with Claude, ChatGPT and open models through one governed layer.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec band" aria-labelledby="start-h">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow rev">How we start</p>
+      <h2 class="title rev" id="start-h">Your scale. Your speed. <span style="color:var(--muted)">(We’d go fast.)</span></h2>
+    </div>
+    <div class="options">
+      <article class="option panel rev rec"><span class="tag v">Our recommendation</span><h3>Full send</h3><p>This is a transformational moment, and windows like it don’t stay open. Full data foundation, full workflow audit, full refounding, as fast as the studio can absorb it.</p><p class="to">Maximum compounding, soonest</p></article>
+      <article class="option panel rev"><span class="tag o">Also great</span><h3>Crawl, walk, run</h3><p>Start with a six-week initial build: the studio brain on the sources three workflows need, in daily use on real shows before the read-out. Then expand from there.</p><p class="to">How most clients start</p></article>
+    </div>
+    <p class="pull rev" style="margin-top:clamp(32px,6vh,56px)">There’s no wrong door. Only a <em>wrong year to stand still.</em></p>
+  </div>
+</section>
+
+<section class="sec" id="substrate" aria-labelledby="sub-h">
+  <div class="wrap">
+    <div class="partner-band panel rev">
+      <p class="x"><svg viewBox="0 0 24 9.6" aria-hidden="true"><use href="#bird"/></svg>The Rook <i>×</i> Substrate</p>
+      <div class="stack-l" style="gap:10px">
+        <h2 class="h3" id="sub-h">Substrate builds company brains, and the agents that run on them, for small and mid-sized firms.</h2>
+        <p class="body">Two founders who build data platforms for a living: Josh Neckes and Cody Schwarz, of Bobsled and Simon.ai. For a Los Angeles communications firm, Substrate fused ten siloed systems into one relationship graph the whole team questions in plain English, with every score backed by evidence.</p>
+      </div>
+      <a class="btn" href="#contact">Talk to us <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+    </div>
+    <details class="sources">
+      <summary>Sources</summary>
+      <ol>
+        <li id="src-1">Netflix Q2 2025 earnings call transcript, July 17, 2025. <a href="https://s22.q4cdn.com/959853165/files/doc_financials/2025/q2/Netflix-Inc-_Earnings-Call_Transcript.pdf">netflix.com investor relations</a></li>
+        <li id="src-2">WIRED, “Amazon’s House of David used over 350 AI shots in season 2,” November 10, 2025. Shot counts are the production company’s estimates. <a href="https://www.wired.com/story/amazons-house-of-david-used-over-350-ai-shots-in-season-2-its-creator-isnt-sorry/">wired.com</a></li>
+        <li id="src-3">Netflix Q2 2026 shareholder letter, July 16, 2026. <a href="https://s22.q4cdn.com/959853165/files/doc_financials/2026/q2/FINAL-Q2-26-Shareholder-Letter.pdf">netflix.com investor relations</a></li>
+        <li id="src-4">Royal Television Society, “How AI is moving from hype to habit in TV production,” November 12, 2025, reporting a panel of September 30, 2025. <a href="https://rts.org.uk/article/how-ai-moving-hype-habit-tv-production">rts.org.uk</a></li>
+        <li id="src-5">ITV plc, 2025 full-year results and results call, March 5, 2026. <a href="https://www.itvplc.com/~/media/Files/I/ITV-PLC-V2/ITV%20Plc%202025%20FY%20Results%20RNS.pdf">itvplc.com</a></li>
+        <li id="src-6">Deadline, SAG-AFTRA members ratify the 2026 TV/Theatrical contracts, June 4, 2026 <a href="https://deadline.com/2026/06/sag-aftra-members-approve-amptp-deal-2026-1236941651/">deadline.com</a>; Writers Guild of America, Summary of the 2026 WGA MBA <a href="https://www.wga.org/contracts/contracts/mba/summary-of-the-2026-wga-mba">wga.org</a></li>
+        <li id="src-7">Netflix, “Using Generative AI in Content Production,” partner guidance, as reported by Social Samosa, August 26, 2025. <a href="https://www.socialsamosa.com/industry-updates/netflix-issues-guidelines-generative-ai-use-content-production-9756214">socialsamosa.com</a></li>
+      </ol>
+    </details>
+  </div>
+</section>
+
+<section class="close-sec" id="contact" aria-labelledby="close-h">
+  <canvas class="formation" data-shape="word" data-text="THE ROOK" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="close-copy">
+      <p class="eyebrow rev">Start a conversation</p>
+      <h2 class="title rev" id="close-h">Let’s build your studio brain.</h2>
+      <ol class="nodes">
+        <li class="rev" style="--c:var(--violet-2)"><h3>Talk it through</h3><p>Where the hours go, what you have tried, and where 10× would matter most</p></li>
+        <li class="rev" style="--c:var(--magenta)"><h3>Map the workflows</h3><p>Value and friction for each, with the first three builds picked together</p></li>
+        <li class="rev" style="--c:var(--teal)"><h3>Build in six weeks</h3><p>Three workflows in daily use on real shows, then a read-out</p></li>
+      </ol>
+      <div class="hero-ctas rev"><a class="btn violet" href="mailto:hello@therookstudios.com?subject=AI%20transformation">Start a conversation <svg aria-hidden="true"><use href="#arrow"/></svg></a></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="The Rook, home"><svg viewBox="0 0 24 9.6" aria-hidden="true"><use href="#bird"/></svg><span>The Rook</span></a>
+        <p>The Rook helps studios make sharper unscripted work, build branded entertainment businesses, and rebuild around AI.</p>
+      </div>
+      <div>
+        <h4>Practices</h4>
+        <ul>
+          <li><a href="unscripted.html">Unscripted</a></li>
+          <li><a href="branded-entertainment.html">Branded entertainment</a></li>
+          <li><a href="ai.html">AI transformation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>The Rook</h4>
+        <ul>
+          <li><a href="approach.html">How we work</a></li>
+          <li><a href="index.html#shift">Why now</a></li>
+          <li><a href="#contact">Start a conversation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Partner</h4>
+        <ul>
+          <li><a href="ai.html#substrate">Substrate</a></li>
+          <li><a href="mailto:hello@therookstudios.com">hello@therookstudios.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© <span data-year>2026</span> The Rook. A group of rooks is called a building.</span>
+      <span>AI transformation in partnership with Substrate.</span>
+    </div>
+  </div>
+</footer>
+<canvas id="near" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<script src="assets/js/rook.js" defer></script>
+</body>
+</html>
